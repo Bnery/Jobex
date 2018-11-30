@@ -15,6 +15,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
+    public void btnLogar(View v)
+    {
+        Intent i = new Intent( LoginActivity.this, TelaPrincipalActivity.class);
+        startActivity(i);
+    }
     public void btnCadastrar(View v)
     {
         Intent i = new Intent(LoginActivity.this, CadUserActivity.class);
