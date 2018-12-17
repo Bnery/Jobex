@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent i = new Intent( LoginActivity.this, TelaPrincipalActivity.class);
         startActivity(i);
     }
+
     public void btnCadastrar(View v)
     {
         Intent i = new Intent(LoginActivity.this, CadUserActivity.class);

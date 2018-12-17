@@ -74,15 +74,16 @@
         android:background="@drawable/badge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/btnCadServico"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnCadServico"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/development"
+        android:onClick="btnCadServico"
         app:layout_constraintEnd_toStartOf="@+id/button8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +143,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView10"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCadServico" />
 
     <TextView
         android:id="@+id/textView10"
