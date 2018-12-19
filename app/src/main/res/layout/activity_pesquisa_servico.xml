@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtBuscaServico"
         android:layout_width="263dp"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
@@ -18,18 +18,19 @@
         android:layout_marginRight="8dp"
         android:background="@drawable/btn_theme"
         android:ems="10"
+        android:hint="Procurar Serviço"
         android:inputType="textPersonName"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="Name"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="16dp" />
 
     <ListView
+        android:id="@+id/lvServicos"
         android:layout_width="368dp"
-        android:layout_height="496dp"
+        android:layout_height="434dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -39,5 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtBuscaServico">
+
+    </ListView>
 </android.support.constraint.ConstraintLayout>

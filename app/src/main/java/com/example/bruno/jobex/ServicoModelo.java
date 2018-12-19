@@ -2,19 +2,23 @@ package com.example.bruno.jobex;
 
 public class ServicoModelo {
 
-    private Integer id;
+    private Long id;
     private String nome;
     private String descricao;
-    private float valorEmReais;
-    private float valorEmMoedaVirtual;
+    private String valorEmReais;
+    private String valorEmMoedaVirtual;
     private String tags;
 
+    @Override
+    public String toString() {
+        return nome;
+    }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -34,19 +38,19 @@ public class ServicoModelo {
         this.descricao = descricao;
     }
 
-    public float getValorEmReais() {
+    public String getValorEmReais() {
         return valorEmReais;
     }
 
-    public void setValorEmReais(float valorEmReais) {
+    public void setValorEmReais(String valorEmReais) {
         this.valorEmReais = valorEmReais;
     }
 
-    public float getValorEmMoedaVirtual() {
+    public String getValorEmMoedaVirtual() {
         return valorEmMoedaVirtual;
     }
 
-    public void setValorEmMoedaVirtual(float valorEmMoedaVirtual) {
+    public void setValorEmMoedaVirtual(String valorEmMoedaVirtual) {
         this.valorEmMoedaVirtual = valorEmMoedaVirtual;
     }
 

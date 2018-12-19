@@ -22,13 +22,13 @@
         android:ems="10"
         android:hint="Nome do Serviço"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtCadCpf"
+        app:layout_constraintBottom_toTopOf="@+id/edtCadDescricao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtCadCpf"
+        android:id="@+id/edtCadDescricao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -39,13 +39,13 @@
         android:ems="10"
         android:hint="Descrição do Serviço"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtCadEmail"
+        app:layout_constraintBottom_toTopOf="@+id/edtValorReais"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtCadNome" />
 
     <EditText
-        android:id="@+id/edtCadEmail"
+        android:id="@+id/edtValorReais"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -56,10 +56,10 @@
         android:ems="10"
         android:hint="Valor em R$"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtCadSenha"
+        app:layout_constraintBottom_toTopOf="@+id/edtValorMoedaVirtual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCadCpf" />
+        app:layout_constraintTop_toBottomOf="@+id/edtCadDescricao" />
 
     <Button
         android:id="@+id/btnCadastrar"
@@ -71,14 +71,15 @@
         android:layout_marginRight="24dp"
         android:layout_marginBottom="34dp"
         android:background="@drawable/btn_theme"
+        android:onClick="btnCadastrar"
         android:text="CADASTRAR"
         app:layout_constraintBottom_toTopOf="@+id/btnBackLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCadSenha2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTags" />
 
     <EditText
-        android:id="@+id/edtCadSenha"
+        android:id="@+id/edtValorMoedaVirtual"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -89,13 +90,13 @@
         android:ems="10"
         android:hint="Valor em Moeda Virtual"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtCadSenha2"
+        app:layout_constraintBottom_toTopOf="@+id/edtTags"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCadEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/edtValorReais" />
 
     <EditText
-        android:id="@+id/edtCadSenha2"
+        android:id="@+id/edtTags"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -109,7 +110,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCadSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/edtValorMoedaVirtual" />
 
     <Button
         android:id="@+id/btnBackLogin"

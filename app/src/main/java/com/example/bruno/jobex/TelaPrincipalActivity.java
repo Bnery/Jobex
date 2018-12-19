@@ -18,4 +18,10 @@ public class TelaPrincipalActivity extends AppCompatActivity {
         Intent intent = new Intent(TelaPrincipalActivity.this, CadServicoActivity.class);
         startActivity(intent);
     }
+
+    public void btnListaServico(View v)
+    {
+        Intent intent = new Intent( TelaPrincipalActivity.this, PesquisaServicoActivity.class);
+        startActivity(intent);
+    }
 }
